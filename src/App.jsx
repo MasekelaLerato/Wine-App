@@ -5,9 +5,9 @@ import { Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
-    <div className='text-white h-[100vh] flex justify-center bg-cover' style={{ backgroundColor: 'red' }}>
+    <div className='text-white h-[100vh] flex justify-center bg-cover' style={{"backgroundImage": "url('../src/assets/hero image.jpg')",  backgroundSize: "cover"}}>
       <Routes>
-        <Route path='login' element={<Login />} />
+        <Route path='/' element={<Login />} />
       </Routes>
     </div>
   );
